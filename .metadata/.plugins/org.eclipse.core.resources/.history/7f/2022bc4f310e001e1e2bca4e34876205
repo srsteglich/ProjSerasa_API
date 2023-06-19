@@ -1,0 +1,29 @@
+package com.serasa.projeto.comtroller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class Controler {
+	
+	@Autowired
+	private RepostorioClinica repositorioClinica;
+	
+	@GetMapping("ola")
+	@ResponseBody
+	public String olaSerasa() {
+		return " Olá, Serasa.... Sou Sérgio R. Steglich ";
+	}
+	
+	
+	@GetMapping("clinicas")
+	@ResponseBody
+	public List<Clinica> listarClinica() {	
+		return repositorioClinica.findAll();
+	}
+	
+	
+	
+}

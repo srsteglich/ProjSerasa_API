@@ -1,0 +1,5 @@
+insert into tab_clinicas (id, nome_clinica) values (1, 'Bem estar');
+insert into tab_clinicas (id, nome_clinica) values (2, 'Saúde Mais');
+insert into tab_clinicas (id, nome_clinica) values (3, 'Clínica Flex');
+insert into tab_clinicas (id, nome_clinica) values (4, 'Clínica Sem Dor');
+insert into tab_clinicas (id, nome_clinica,) values (5, 'Clínica Serasa');
