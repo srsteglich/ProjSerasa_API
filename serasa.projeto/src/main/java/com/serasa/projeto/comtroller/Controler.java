@@ -1,4 +1,4 @@
-package com.serasa.projeto.comtroller;
+ package com.serasa.projeto.comtroller;
 
 import java.util.List;
 
@@ -28,7 +28,5 @@ public class Controler {
 	public List<Clinica> listar() {	
 		return repositorioClinica.findAll();
 	}
-	
-	
-	
+		  
 }
